@@ -25,8 +25,6 @@ Et finalement, implémentez l'algorithme de jeu... Les cartes seront retirées d
 j2, comparées, et selon la situation, ajoutées directement à la fin du paquet du gagnant ou stockées
 dans des nouvelles listes permettant de gérer la situation d'égalité. Le gagnant récupére alors à la fin
 de sa liste toutes les cartes des listes qui ont été jouées.
-Chaque coup joué sera affiché et la touche entrée permettra de passer au coup suivant.
-Voilà, amusez-vous bien !
 
 English :
 
@@ -55,5 +53,3 @@ And finally, implement the game algorithm... The cards will be removed from the 
 j2, compared, and depending on the situation, added directly to the end of the winner's packet or stored
 in new lists allowing the situation of equality to be managed. The winner then collects at the end
 from his list all the cards from the lists that have been played.
-Each move played will be displayed and the enter key will move to the next move.
-There you go, have fun!
