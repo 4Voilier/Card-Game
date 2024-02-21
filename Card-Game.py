@@ -4,6 +4,8 @@ j1win = 0
 j2win = 0
 min = 1000000000
 max = -(10^10)
+minj = ""
+maxj = ""
 partie = int(input("Combien veux tu de partie : "))
 for t in range(0,partie) :
     game = []
@@ -82,8 +84,16 @@ for t in range(0,partie) :
                 j1win +=1
             if gameturn < min :
                 min = gameturn-1
+                if len(j1) == 0 :
+                    minj = "j2"
+                elif len(j2) == 0 :
+                    minj = "j1"
             if gameturn > max :
                 max = gameturn-1
+                if len(j1) == 0 :
+                    maxj = "j2"
+                elif len(j2) == 0 :
+                    maxj = "j1"
             break
 for ine in te :
     moy += ine
@@ -91,5 +101,5 @@ moy = moy/len(te)
 print(f"Il faut en moyenne {moy} tours pour gagner")
 print(f"J1 a gagné {j1win} fois")
 print(f"J2 a gagné {j2win} fois")
-print(f"Il a fallut au minimum {min} tours pour gagner")
-print(f"Il a fallut au maximum {max} tours pour gagner")
+print(f"Il a fallut au minimum {min} tours pour que {minj} gagne.")
+print(f"Il a fallut au maximum {max} tours pour que {maxj} gagne.")
